@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <title>Solucion  #2</title>
+    <title>Solucion #4</title>
 </head>
 
 <body>
@@ -15,43 +15,39 @@
 
         <h1 class="text-decoration-underline">Practica - POO</h1>
 
-        <a href="solucion1.html" class="btn btn-outline-dark my-1">Promedio</a>
-
 
         <div class="row mt-4">
             <div class="col-10 col-md-8">
 
-                <h4>Area de Triangulo</h4>
-                <p>Calcualar el area de un triangulo rectangulo</p>
+                <h4>Numero Mayor y Menor</h4>
+                <p>Determina el numeor mayor y menor de 3 ingresados</p>
 
-                <form action="objetos/areaTriangulo_op.php" method="post">
+                <form action="objetos/mayorMenor_op.php" method="post">
 
                     <!-- Etiquetas de nombre -->
                     <div class="mt-3 justify-content-around d-flex">
-                        <label for="input_area_base" class="form-label">Base:</label>
-                        <label for="input_area_altura" class="form-label">Altura:</label>
+                        <label for="input_mayormenor1" class="form-label">Valor #1:</label>
+                        <label for="input_mayormenor2" class="form-label">Valor #2:</label>
+                        <label for="input_mayormenor3" class="form-label">Valor #3:</label>
                     </div>
 
                     <!-- Inputs del usuario -->
                     <div class="justify-content-center d-flex">
-                        <input type="number" class="form-control mx-2" id="input_area_base" name="input_area_base">
-                        <input type="number" class="form-control mx-2" id="input_area_altura" name="input_area_altura">
+                        <input type="number" class="form-control mx-2" id="input_mayormenor1" name="input_mayormenor1">
+                        <input type="number" class="form-control mx-2" id="input_mayormenor2" name="input_mayormenor2">
+                        <input type="number" class="form-control mx-2" id="input_mayormenor3" name="input_mayormenor3">
                     </div>
 
                     <!-- Button de resultado -->
                     <div class="mt-5 justify-content-center d-flex">
-                        <button type="submit" class="btn btn-outline-dark mx-1" id="btn_area_triangulo" name="btn_area_triangulo">Calcular
-                            Area</button>
+                        <button type="submit" class="btn btn-outline-dark mx-1" id="btn_mayormenor"
+                            name="btn_mayormenor">Analizar</button>
                     </div>
-
-                    <!-- Output resultado
-                    <div class="mt-3 justify-content-center d-flex">
-                        <label name="output_area_triangulo" id="output_area_triangulo" class="fs-3 fw-bold" value="<?php echo $operaciones->areaTriangulo(); ?>" >Resultado</label>
-                    </div>  -->
-
-                </form>
-
             </div>
+
+            </form>
+
+        </div>
         </div>
 
     </main>
